@@ -28,27 +28,37 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 25px;
       width: 80%;
       margin: auto;
     }
 
-    /* 🔥 카드 = 클릭 가능 */
+    /* 🔥 카드 스타일 (완성형) */
     .card {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(10px);
-      padding: 20px;
-      border-radius: 15px;
+      backdrop-filter: blur(12px);
+      padding: 160px;
+      border-radius: 20px;
       border: 1px solid rgba(255,255,255,0.2);
-      transition: 0.3s;
+
       text-decoration: none;
       color: white;
       cursor: pointer;
+
+      height: 16px;
+      font-size: 22px;
+      font-weight: bold;
+
+      transition: 0.25s;
     }
 
     .card:hover {
-      transform: scale(1.05);
+      transform: scale(1.07);
+      background: rgba(255,255,255,0.18);
     }
   </style>
 </head>
@@ -61,17 +71,19 @@
 
   <div class="grid">
 
-    <!-- ✅ 카드 전체 클릭 다운로드 -->
+    <!-- ✅ 텍팩 1 -->
     <a href="https://raw.githubusercontent.com/bloxd-Revia/packs/main/starLike.zip" download class="card">
-      <div>starLike</div>
+      starLike
     </a>
 
+    <!-- ✅ 텍팩 2 -->
     <a href="#" class="card">
-      <div>1</div>
+      텍팩 추가 예정
     </a>
 
+    <!-- ✅ 텍팩 3 -->
     <a href="#" class="card">
-      <div>2</div>
+      텍팩 추가 예정
     </a>
 
   </div>
