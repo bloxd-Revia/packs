@@ -25,7 +25,12 @@
       margin-bottom: 10px;
     }
 
+    /* 🔥 링크 줄 (간격 핵심) */
     .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* 👈 간격 여기서 조절 */
       margin-bottom: 40px;
       font-size: 18px;
     }
@@ -35,7 +40,12 @@
       font-weight: bold;
     }
 
-    /* 🔥 디스코드 (전체 보라색) */
+    /* 구분선 */
+    .divider {
+      opacity: 0.5;
+    }
+
+    /* 🔥 디스코드 */
     .discord {
       color: #5865F2;
     }
@@ -105,13 +115,15 @@
 
   <!-- 🔥 링크 -->
   <div class="links">
-    @KOR_Revia |
-    
+    <span>@KOR_Revia</span>
+
+    <span class="divider">|</span>
+
     <a href="https://discord.gg/jgyRfruC" target="_blank" class="discord">
       discord
     </a>
 
-    |
+    <span class="divider">|</span>
 
     <a href="https://youtube.com/@R3via" target="_blank" class="youtube">
       <span class="you">you</span><span class="tube">tube</span>
@@ -135,22 +147,22 @@
       <div class="title">텍팩 추가 예정</div>
     </a>
 
-        <a href="#" class="card">
+    <a href="#" class="card">
       <img src="https://iili.io/B2y9fql.png">
       <div class="title">텍팩 추가 예정</div>
     </a>
 
-        <a href="#" class="card">
+    <a href="#" class="card">
       <img src="https://iili.io/B2y9fql.png">
       <div class="title">텍팩 추가 예정</div>
     </a>
 
-        <a href="#" class="card">
+    <a href="#" class="card">
       <img src="https://iili.io/B2y9fql.png">
       <div class="title">텍팩 추가 예정</div>
     </a>
 
-        <a href="#" class="card">
+    <a href="#" class="card">
       <img src="https://iili.io/B2y9fql.png">
       <div class="title">텍팩 추가 예정</div>
     </a>
